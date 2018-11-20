@@ -1,0 +1,16 @@
+swagger: '2.0'
+info:
+  version: 0.0.1
+  title: testparametercomponentref
+
+paths:
+  /user/{user_id}:
+    get:
+      parameters:
+        - $ref: '#parameters/userIdParameter'
+
+parameters:
+  userIdParameter:
+    required: true
+    schema:
+      type: string

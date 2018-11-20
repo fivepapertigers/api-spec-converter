@@ -101,6 +101,12 @@ TestCases.push({
   skipBrowser: true,
 })
 
+TestCases.push({
+  in: {format: 'openapi_3', file: 'parameter_component_ref.yml'},
+  out: {format: 'swagger_2', file: 'parameter_component_ref.yml'},
+  skipBrowser: true,
+})
+
 var openapi3Cases = [];
 
 TestCases.forEach(function(testCase) {

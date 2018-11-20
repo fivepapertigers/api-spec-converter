@@ -1,0 +1,15 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: testparametercomponentref
+paths:
+  /user/{user_id}:
+    get:
+      parameters:
+        - $ref: '#components/parameters/userIdParameter'
+components:
+  parameters:
+    userIdParameter:
+      required: true
+      schema:
+        type: string
